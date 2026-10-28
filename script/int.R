@@ -1,4 +1,4 @@
-initialization
+# initialization
 #you difine your folder with automaticaly creator
 folders <- c("data","script","output/polts","output/tables","docs")
 #create folders it they do not exist already
