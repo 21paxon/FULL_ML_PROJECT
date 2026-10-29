@@ -92,3 +92,7 @@ results <- data.frame(
 )
 
 print(results)
+
+
+
+skm(mtcars)

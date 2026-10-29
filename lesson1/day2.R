@@ -112,3 +112,4 @@ str(df)
 dim(df)
 #view cleaned dataset
 View(df)
+skim(df)
