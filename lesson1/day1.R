@@ -21,3 +21,7 @@ students$Attendance[
 print(students)
 #to check again if there is no  null valaue
 colSums(is.na(students))
+#check for duplicated values 
+sum(duplicated(students))
+#to remove duplicated values or record
+students <- unique(students)
