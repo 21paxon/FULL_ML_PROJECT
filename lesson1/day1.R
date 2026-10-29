@@ -17,3 +17,4 @@ students$Attendance[
 ] <- median(students$Attendance, na.rm = TRUE)
 
 print(students)
+colSums(is.na(students))
