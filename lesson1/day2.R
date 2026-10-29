@@ -28,7 +28,6 @@ names(df)
 
 # Step 6: Check data types
 str(df)
-df
 
 # Step 7: Count missing values in each column
 colSums(is.na(df))
@@ -53,3 +52,23 @@ sum(is.na(df$Attendance))
 median(df$Study.hours.week,na.rm=TRUE)
 df$Study.hours.week[is.na(df$Study.hours.week)] <-median(df$Study.hours.week,na.rm=TRUE)
 sum(is.na(df$Study.hours.week))
+
+
+# Summary of numeric columns
+summary(df)
+
+boxplot(df$Attendance,
+        main = "Attendance Boxplot",
+        ylab = "Attendance (%)")
+
+quantile(df$Attendance, na.rm = TRUE)
+
+IQR_value <- IQR(df$Attendance, na.rm = TRUE)
+
+IQR_value
+
+lower_bound <- 62.50 - (1.5 * IQR_value)
+upper_bound <- 87.25 + (1.5 * IQR_value)
+
+lower_bound
+upper_bound
