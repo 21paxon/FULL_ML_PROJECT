@@ -11,10 +11,13 @@ students <- data.frame(
 print(students)
 is.na(students)
 colSums(is.na(students))
+#Handling  the missing value
 median(students$Attendance,na.rm = TRUE)
+#replacing  the missing value
 students$Attendance[
   is.na(students$Attendance)
 ] <- median(students$Attendance, na.rm = TRUE)
 
 print(students)
+#to check again if there is no  null valaue
 colSums(is.na(students))
