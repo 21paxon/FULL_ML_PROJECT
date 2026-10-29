@@ -72,3 +72,43 @@ upper_bound <- 87.25 + (1.5 * IQR_value)
 
 lower_bound
 upper_bound
+
+df[df$Attendance < 0 | df$Attendance > 100, ]
+
+valid_attendance <- df$Attendance[
+  df$Attendance >= 0 & df$Attendance <= 100
+]
+
+median_attendance <- median(valid_attendance, na.rm = TRUE)
+
+median_attendance
+
+df$Attendance[df$Attendance < 0 | df$Attendance > 100] <-
+  median_attendance
+df[df$Student.ID == "ST005", ]
+
+
+summary(df$Attendance)
+sum(df$Attendance < 0 | df$Attendance > 100, na.rm = TRUE)
+
+df$Gender[df$Gender == "M"] <- "Male"
+
+unique(df$Gender)
+
+table(df$Gender)
+
+df$Gender == "M"
+table(df$Gender, useNA = "ifany")
+
+df[df$Student.ID == "ST010", ]
+
+sum(duplicated(df))
+
+colSums(is.na(df))
+
+#Check the structure of your dataset
+str(df)
+#chec dimmension of our dataset
+dim(df)
+#view cleaned dataset
+View(df)
