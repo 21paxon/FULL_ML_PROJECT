@@ -35,11 +35,13 @@ colSums(is.na(df))
 # Step 8: Count duplicate rows
 sum(duplicated(df))
 
-median(df$Attendance,na.rm=TRUE)
+median(df$Attendance...,na.rm=TRUE)
 
-df$Attendance[is.na(df$Attendance)] <- median(df$Attendance,na.rm=TRUE)
+df$Attendance[is.na(df$Attendance...)] <- median(df$Attendance...,na.rm=TRUE)
 
-sum(df$Attendance...)
-print(df$Attendance...)
+sum(is.na(df$Attendance...))
 
+sum(is.na(df$Attendance...))
+sum(is.na(df$Attendance))
 
+df$`Attendance...` <- NULL
