@@ -28,6 +28,7 @@ names(df)
 
 # Step 6: Check data types
 str(df)
+df
 
 # Step 7: Count missing values in each column
 colSums(is.na(df))
@@ -35,13 +36,20 @@ colSums(is.na(df))
 # Step 8: Count duplicate rows
 sum(duplicated(df))
 
-median(df$Attendance...,na.rm=TRUE)
+median(df$Attendance,na.rm=TRUE)
 
-df$Attendance[is.na(df$Attendance...)] <- median(df$Attendance...,na.rm=TRUE)
+df$Attendance[is.na(df$Attendance)] <- median(df$Attendance,na.rm=TRUE)
 
-sum(is.na(df$Attendance...))
+sum(is.na(df$Attendance))
 
-sum(is.na(df$Attendance...))
+sum(is.na(df$Attendance))
 sum(is.na(df$Attendance))
 
 df$`Attendance...` <- NULL
+names(df)
+sum(is.na(df$Attendance))
+
+
+median(df$Study.hours.week,na.rm=TRUE)
+df$Study.hours.week[is.na(df$Study.hours.week)] <-median(df$Study.hours.week,na.rm=TRUE)
+sum(is.na(df$Study.hours.week))
