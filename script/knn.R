@@ -98,7 +98,7 @@ diabetes_data$diabetes <- factor(
 )
 
 cat("\nDataset dimensions:\n")
-print(dim(diabetes_data))
+print(dim(diabetes_data)) 
 
 cat("\nFirst six rows:\n")
 print(head(diabetes_data))

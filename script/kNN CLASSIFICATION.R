@@ -25,7 +25,7 @@ str(Default)
 n <- nrow(Default)
 train_id <- sample(
   1:n,
-  size = floor(0.80 * n)
+  size = floor(0.70 * n)
 )
 
 train <- Default[train_id, ]
