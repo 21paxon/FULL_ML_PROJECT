@@ -57,3 +57,6 @@ mark[c(1,4)]
 mark[3]<-95
 
 mark[c(1,3)]
+
+students[2]
+
