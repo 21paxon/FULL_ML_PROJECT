@@ -59,4 +59,33 @@ mark[3]<-95
 mark[c(1,3)]
 
 students[2]
+marks[3]
+students[c(1,4)]
+marks[2]<-90
+marks[2]
 
+
+scores <- matrix( c(75,80,65,90,85,70),
+
+nrow=2,
+
+ncol=3
+)
+
+print(scores)
+
+#Accessing matrix elements
+scores[1,1]
+scores[1,]
+scores[2,3]
+scores[,2]
+
+#The if statement
+
+age <- 16
+
+if (age >= 18) {
+  print("you are adult")
+}else{
+  print("you are young go to the place of the minors")
+}
