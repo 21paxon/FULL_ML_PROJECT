@@ -113,3 +113,8 @@ dim(df)
 #view cleaned dataset
 View(df)
 skim(df)
+
+mean(df$Attendance)
+median(df$Attendance)
+sd(df$Attendance)
+var(df$Attendance)
