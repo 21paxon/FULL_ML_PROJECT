@@ -49,3 +49,20 @@ df[df$'Attendance...'>100,]
 df$'Attendance...'[df$'Attendance...'>100]<-75
 
 df$'Attendance...'
+#verify if there isnt any other remanin
+any(df$'Attendance...'>100)
+colSums(is.na(df))
+
+df$Gender
+# Standardize the gender value M to Male
+df$Gender[df$Gender == "M"] <- "Male"
+
+df$Gender
+
+# Count duplicated rows in the dataset
+sum(duplicated(df))
+
+str(df)
+summary(df)
+
+write.csv(df,"paxon.csv",row.names=FALSE)
