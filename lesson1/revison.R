@@ -66,3 +66,4 @@ str(df)
 summary(df)
 
 write.csv(df,"paxon.csv",row.names=FALSE)
+file.exists("paxon.csv")
