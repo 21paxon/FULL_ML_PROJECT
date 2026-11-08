@@ -172,3 +172,31 @@ actual_classes <- ifelse(y_test == "Pass", 1, 0)
 
 # Display the actual binary values
 print(actual_classes)
+# Compare actual results with predicted results
+confusion_matrix <- table(
+  Actual = actual_classes,
+  Predicted = predicted_classes
+)
+
+# Display the confusion matrix
+print(confusion_matrix)
+
+# Calculate accuracy using the confusion matrix
+accuracy <- sum(diag(confusion_matrix)) / sum(confusion_matrix)
+
+# Display accuracy
+print(accuracy)
+
+# Calculate precision
+precision <- confusion_matrix["1", "1"] /
+  sum(confusion_matrix[, "1"])
+
+# Display precision
+print(precision)
+
+# Calculate recall
+recall <- confusion_matrix["1", "1"] /
+  sum(confusion_matrix["1", ])
+
+# Display recall
+print(recall)
